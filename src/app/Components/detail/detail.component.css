@@ -1,0 +1,46 @@
+.container {
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.5rem;;
+}
+
+p, button {
+    font-size: 1rem;
+}
+
+.btn-details button {
+    width: 100%;
+    background-color: #3f51b5;
+    margin: 2rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1rem;
+    color: white;
+}
+
+.title:hover {
+    color: white;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

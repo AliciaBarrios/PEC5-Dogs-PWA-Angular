@@ -1,0 +1,46 @@
+.container {
+    width: 95vw;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 1.75rem;;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.view-buttons button {
+    margin: 0.5rem;
+    background-color: #3f51b550;
+}
+
+.view-buttons button.active-view {
+    background-color: #3f51b5;
+    color: white; 
+}
+
+.view-buttons mat-icon {
+    font-size: 24px;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

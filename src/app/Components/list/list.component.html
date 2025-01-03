@@ -1,0 +1,23 @@
+<div class="container" >
+    <div class="view-buttons">
+        <button mat-fab aria-label="Example icon button with a grid icon" (click)="setView('cards')" [ngClass]="{'active-view': currentView === 'cards'}">
+            <mat-icon>grid_view</mat-icon>
+        </button>
+        <button mat-fab aria-label="Example icon button with a list icon" (click)="setView('list')" [ngClass]="{'active-view': currentView === 'list'}">
+            <mat-icon>view_list</mat-icon>
+        </button>
+    </div>
+    <h1>Dogs</h1>
+    <div *ngIf="currentView === 'cards'" class="card-container" [@slideInList]="dogs.length">
+        <app-card
+            *ngFor="let dog of dogs" 
+            [routerLink]="['/dog', dog.id]"
+            [card]="dog">
+        </app-card>
+    </div>
+    <div *ngIf="currentView === 'list'" class="grid-container" [@slideInList]="dogs.length">
+        <app-grid [grid]="dogs"></app-grid>
+    </div>
+</div>
+
+

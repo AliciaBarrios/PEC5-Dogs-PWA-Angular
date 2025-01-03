@@ -1,0 +1,32 @@
+.table {
+    width: 100%;
+}
+
+.rounded-table {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+::ng-deep .mat-column-id {
+    width: 70px; 
+}
+
+td {
+    cursor: pointer;
+}
+
+tr, 
+tr.row {
+    background-color: #f9f9f9;
+}
+
+tr.row:hover {
+    color: #f9f9f9;
+    background-color: #bcc4e7;
+}
+
+th, td {
+    color: black;
+    border: 0.15px solid rgba(0, 0, 0, 0.1);
+}

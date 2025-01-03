@@ -1,0 +1,15 @@
+.example-card {
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+    color: black;
+    margin: 1rem;
+}
+
+.example-card:hover {
+    cursor: pointer;
+}
+
+.example-card mat-card-title:hover {
+    color: #3f51b5;
+}
