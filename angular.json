@@ -31,8 +31,7 @@
             ],
             "scripts": [],
             "serviceWorker": true,
-            "ngswConfigPath": "ngsw-config.json",
-            "baseHref": "/PEC5-Dogs-PWA-Angular/" 
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
