@@ -11,6 +11,6 @@ export class CardComponent {
 
   setDefaultImage(event: Event): void {
     const imgElement = event.target as HTMLImageElement;
-    imgElement.src = '/assets/default-dog.jpg';
+    imgElement.src = './assets/default-dog.jpg';
   }
 }
