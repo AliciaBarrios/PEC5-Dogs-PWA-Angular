@@ -11,7 +11,7 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   getAllDogs(): Observable<Dog[]> {
-    return this.http.get<Dog[]>(this.apiUrl + "?limit=20");
+    return this.http.get<Dog[]>(this.apiUrl);
   }
 
   getDogById(id: string): Observable<Dog> {
